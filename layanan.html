@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEHATBERSAMA</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="stylelayanan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo" class="logo-img">
+                <span>SEHATBERSAMA</span>
+            </div>
+            <div class="nav-links">
+                <a href="home.html"><i class="fas fa-home"></i> Home</a>
+                <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                <a href="layanan.html"><i class="fas fa-concierge-bell"></i> Layanan</a>
+                <a href="artikel.html"><i class="fas fa-newspaper"></i> Artikel</a>
+                <a href="kontak.html"><i class="fas fa-phone"></i> Kontak</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="layanan">
+            <h1>Layanan Kami Cepat dan Tepat </h1>
+            <p class="layanan-desc">
+                Kami menyediakan berbagai layanan kesehatan digital yang dirancang untuk mendukung gaya hidup sehat dan meningkatkan kualitas pelayanan medis secara efisien dan profesional.
+            </p>
+            <div class="layanan-list">
+                <a class="layanan-item layanan-link" href="https://wa.me/6285878889004" target="_blank" rel="noopener">
+                    <div class="layanan-icon">🩺</div>
+                    <h2>Layanan Konsultasi Dokter online</h2>
+                    <p>
+                        Fasilitas konsultasi langsung dengan dokter berpengalaman melalui platform digital, memberikan kemudahan akses layanan kesehatan tanpa harus datang ke fasilitas kesehatan secara fisik.
+                    </p>
+                </a>
+                <div class="layanan-item" id="jadwalBtn">
+                    <div class="layanan-icon">📅</div>
+                    <h2>Penjadwalan Konsultasi Medis</h2>
+                    <p>
+                        Layanan ini memungkinkan pengguna untuk membuat janji temu dengan tenaga medis secara fleksibel, disertai dengan informasi seputar gaya hidup sehat dan strategi pengelolaan stres yang efektif.
+                    </p>
+                </div>
+                <div class="layanan-item" id="registrasiBtn">
+                    <div class="layanan-icon">💻</div>
+                    <h2>Registrasi dan Akses Rekam Medis Digital (E-Health)</h2>
+                    <p>
+                        Pendaftaran layanan kesehatan serta akses terhadap data rekam medis secara daring, mendukung efisiensi dan keterpaduan dalam sistem informasi kesehatan.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Opsi Kamar -->
+        <section class="opsi-kamar">
+            <h2>Pilihan Kamar Rawat Inap</h2>
+            <div class="kamar-list">
+                <div class="kamar-item">
+                    <span class="kamar-badge">Ekonomis</span>
+                    <div class="kamar-img-wrap">
+                        <img src="img/bpjs.jpg" alt="Kamar BPJS" class="kamar-img">
+                    </div>
+                    <h3>Kamar BPJS</h3>
+                    <ul>
+                        <li>1 kamar untuk 2-3 pasien</li>
+                        <li>Tempat tidur standar rumah sakit</li>
+                        <li>Kamar mandi bersama</li>
+                        <li>AC dan kipas angin</li>
+                        <li>TV bersama</li>
+                        <li>Makan 3x sehari</li>
+                        <li>Perawat 24 jam</li>
+                    </ul>
+                    <div class="kamar-actions">
+                        <button class="btn-booking">Booking</button>
+                        <button class="btn-detail">Lihat Detail</button>
+                        <a href="https://wa.me/6285878889004" target="_blank" class="btn-admin">Tanya Admin</a>
+                    </div>
+                </div>
+                <div class="kamar-item">
+                    <span class="kamar-badge badge-populer">Terpopuler</span>
+                    <div class="kamar-img-wrap">
+                        <img src="img/vip.jpg" alt="Kamar VIP" class="kamar-img">
+                    </div>
+                    <h3>Kamar VIP</h3>
+                    <ul>
+                        <li>1 kamar untuk 1 pasien (privat)</li>
+                        <li>Tempat tidur elektrik</li>
+                        <li>Kamar mandi dalam</li>
+                        <li>AC pribadi</li>
+                        <li>TV LED pribadi & WiFi</li>
+                        <li>Sofa untuk penunggu</li>
+                        <li>Makan 3x sehari + snack</li>
+                        <li>Perawat 24 jam</li>
+                        <li>Lemari & meja kerja</li>
+                    </ul>
+                    <div class="kamar-actions">
+                        <button class="btn-booking">Booking</button>
+                        <button class="btn-detail">Lihat Detail</button>
+                        <a href="https://wa.me/6285878889004" target="_blank" class="btn-admin">Tanya Admin</a>
+                    </div>
+                </div>
+                <div class="kamar-item">
+                    <span class="kamar-badge badge-premium">Premium</span>
+                    <div class="kamar-img-wrap">
+                        <img src="img/vvip.jpg" alt="Kamar VVIP" class="kamar-img">
+                    </div>
+                    <h3>Kamar VVIP</h3>
+                    <ul>
+                        <li>1 kamar luas & eksklusif</li>
+                        <li>Tempat tidur premium elektrik</li>
+                        <li>Kamar mandi dalam + water heater</li>
+                        <li>AC & TV LED besar</li>
+                        <li>Ruang tamu mini & sofa keluarga</li>
+                        <li>Mini pantry & kulkas</li>
+                        <li>Makan 3x sehari + snack premium</li>
+                        <li>Perawat & dokter jaga 24 jam</li>
+                        <li>Fasilitas hiburan & WiFi</li>
+                    </ul>
+                    <div class="kamar-actions">
+                        <button class="btn-booking">Booking</button>
+                        <button class="btn-detail">Lihat Detail</button>
+                        <a href="https://wa.me/6285878889004" target="_blank" class="btn-admin">Tanya Admin</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal Jadwal -->
+        <div id="jadwalModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h3>Form Penjadwalan Konsultasi</h3>
+                <form>
+                    <label for="hari">Hari:</label>
+                    <select id="hari" name="hari" required>
+                        <option value="">Pilih Hari</option>
+                        <option>Senin</option>
+                        <option>Selasa</option>
+                        <option>Rabu</option>
+                        <option>Kamis</option>
+                        <option>Jumat</option>
+                        <option>Sabtu</option>
+                        <option>Minggu</option>
+                    </select>
+                    <label for="tanggal">Tanggal:</label>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                    <label for="jam">Jam:</label>
+                    <input type="time" id="jam" name="jam" required>
+                    <button type="submit">Kirim Jadwal</button>
+                </form>
+            </div>
+        </div>
+        <!-- Modal Registrasi -->
+        <div id="registrasiModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeRegistrasi">&times;</span>
+                <h3>Form Registrasi Pasien</h3>
+                <form>
+                    <label for="nama">Nama Pasien:</label>
+                    <input type="text" id="nama" name="nama" required>
+
+                    <label for="ttl">Tempat, Tanggal Lahir:</label>
+                    <input type="text" id="ttl" name="ttl" placeholder="Contoh: Bandung, 01-01-2000" required>
+
+                    <label for="umur">Umur:</label>
+                    <input type="number" id="umur" name="umur" min="0" required>
+
+                    <label for="bpjs">Nomor BPJS:</label>
+                    <input type="text" id="bpjs" name="bpjs" required>
+
+                    <label for="hp">Nomor HP:</label>
+                    <input type="tel" id="hp" name="hp" required>
+
+                    <label for="poli">Tujuan Kunjungan ke Poli:</label>
+                    <select id="poli" name="poli" required>
+                        <option value="">Pilih Poli</option>
+                        <option>Poli Umum</option>
+                        <option>Poli Gigi</option>
+                        <option>Poli Anak</option>
+                        <option>Poli Kandungan</option>
+                        <option>Poli Mata</option>
+                        <option>Poli Lainnya</option>
+                    </select>
+                    <button type="submit">Kirim Registrasi</button>
+                </form>
+            </div>
+        </div>
+        <section class="daftar-dokter">
+            <h2>Daftar Dokter & Jadwal Pelayanan</h2>
+            <div class="dokter-list">
+                <div class="dokter-card">
+                    <img src="img/foto yunan.jpg" alt="Prof Dr. Yunan Faila Sofi" class="dokter-foto">
+                    <div class="dokter-info">
+                        <h3>Prof Dr. Yunan Faila Sofi</h3>
+                        <p><strong>Poli:</strong> Umum</p>
+                        <p><strong>Jam Pelayanan:</strong> Senin - Jumat, 08.00 - 14.00</p>
+                    </div>
+                </div>
+                <div class="dokter-card">
+                    <img src="img/wakhid.jpg" alt="Prof. Wakhid Nugroho, S.Gz., M.Gz., Ph.D." class="dokter-foto">
+                    <div class="dokter-info">
+                        <h3>Prof. Wakhid Nugroho, S.Gz., M.Gz., Ph.D.</h3>
+                        <p><strong>Poli:</strong> Gizi</p>
+                        <p><strong>Jam Pelayanan:</strong> Selasa & Kamis, 09.00 - 13.00</p>
+                    </div>
+                </div>
+                <div class="dokter-card">
+                    <img src="img/fikry.jpg" alt="Prof.Dr.H.Fikry Mumtaz,Sp.M" class="dokter-foto">
+                    <div class="dokter-info">
+                        <h3>Prof.Dr.H.Fikry Mumtaz,Sp.M</h3>
+                        <p><strong>Poli:</strong> Mata</p>
+                        <p><strong>Jam Pelayanan:</strong> Rabu & Jumat, 10.00 - 15.00</p>
+                    </div>
+                </div>
+                <div class="dokter-card">
+                    <img src="img/ergi.jpg" alt="dr. Yustinus Ergi Owen, Sp.OG" class="dokter-foto">
+                    <div class="dokter-info">
+                        <h3>dr. Yustinus Ergi Owen, Sp.OG</h3>
+                        <p><strong>Poli:</strong> Kandungan</p>
+                        <p><strong>Jam Pelayanan:</strong> Senin & Kamis, 13.00 - 17.00</p>
+                    </div>
+                </div>
+                <div class="dokter-card">
+                    <img src="img/AREZA 3x4.jpg" alt="dr. Areza Noor Pratama, Sp.A" class="dokter-foto">
+                    <div class="dokter-info">
+                        <h3>dr. Areza Noor Pratama, Sp.A</h3>
+                        <p><strong>Poli:</strong> Anak</p>
+                        <p><strong>Jam Pelayanan:</strong> Jumat & Sabtu, 09.00 - 12.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Modal Jadwal
+        const jadwalBtn = document.getElementById('jadwalBtn');
+        const jadwalModal = document.getElementById('jadwalModal');
+        const closeModal = document.getElementById('closeModal');
+        jadwalBtn.onclick = function() {
+            jadwalModal.style.display = 'block';
+        }
+        closeModal.onclick = function() {
+            jadwalModal.style.display = 'none';
+        }
+
+        // Modal Registrasi
+        const registrasiBtn = document.getElementById('registrasiBtn');
+        const registrasiModal = document.getElementById('registrasiModal');
+        const closeRegistrasi = document.getElementById('closeRegistrasi');
+        registrasiBtn.onclick = function() {
+            registrasiModal.style.display = 'block';
+        }
+        closeRegistrasi.onclick = function() {
+            registrasiModal.style.display = 'none';
+        }
+
+        // Tutup modal jika klik di luar konten
+        window.onclick = function(event) {
+            if (event.target == jadwalModal) {
+                jadwalModal.style.display = 'none';
+            }
+            if (event.target == registrasiModal) {
+                registrasiModal.style.display = 'none';
+            }
+        }
+    </script>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>SEHATBERSAMA</h3>
+                <p>Platform kesehatan terpercaya yang menyediakan informasi dan layanan kesehatan untuk membantu Anda hidup lebih sehat dan bahagia.</p>
+                <div class="social-links">
+                    <a href="#"><i>FB</i></a>
+                    <a href="#"><i>IG</i></a>
+                    <a href="#"><i>TW</i></a>
+                    <a href="#"><i>YT</i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Layanan Kami</h3>
+                <ul>
+                    <li><a href="#">Konsultasi Kesehatan</a></li>
+                    <li><a href="#">Program Diet</a></li>
+                    <li><a href="#">Tes Kesehatan</a></li>
+                    <li><a href="#">Webinar Kesehatan</a></li>
+                    <li><a href="#">Artikel Kesehatan</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="artikel.html">Artikel</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Berlangganan</h3>
+                <p>Dapatkan tips kesehatan dan update terbaru dari kami.</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Anda" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Berlangganan</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 SEHATBERSAMA. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>

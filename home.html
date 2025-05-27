@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEHATBERSAMA</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" class="logo-img">   
+            <span>SEHATBERSAMA</span>
+        </div>
+        <div class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="layanan.html"><i class="fas fa-concierge-bell"></i> Layanan</a>
+            <a href="artikel.html"><i class="fas fa-newspaper"></i> Artikel</a>
+            <a href="kontak.html"><i class="fas fa-phone"></i> Kontak</a>
+        </div>
+    </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <video class="hero-bg" autoplay muted loop playsinline>
+                    <source src="video/0_Medical Supplies_First Aid Kit_3840x2160.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-content">
+                    <h1>Merawat dengan Hati, Menyembuhkan dengan Kasih</h1>
+                    <p>Hidup sehat dimulai dari pengetahuan yang tepat, temukan 
+                    <br>berbagai informasi seputar pola hidup sehat, nutrisi seimbang, 
+                    <br>dan pencegahan penyakit.</p>
+                    <p>Bersama <strong>SEHATBERSAMA</strong>, jaga kesehatanmu dengan 
+                    <br>informasi terpercaya seputar gaya hidup sehat, asupan gizi, 
+                    <br>dan cara mencegah penyakit sejak dini.</p> 
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/gambar1.jpg" class="hero-bg" alt="background 2">
+                <div class="hero-content">
+                    <h1>SEHATBERSAMA Modern Hospital</h1>
+                    <p>Hospital modern dengan teknologi canggih dan 
+                    <br>fasilitas lengkap untuk layanan kesehatan terbaik.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/gambar2.jpg" class="hero-bg" alt="background 3">
+                <div class="hero-content">
+                    <h1>Fasilitas Terdepan</h1>
+                    <p>Dilengkapi ruang perawatan modern dan 
+                    <br>teknologi mutakhir untuk kenyamanan Anda.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/gambar3.jpg" class="hero-bg" alt="background 4">
+                <div class="hero-content">
+                    <h1>Dokter &<br>Tenaga Medis Ahli</h1>
+                    <p>Profesional, berpengalaman, dan 
+                    <br>selalu siap membantu menjaga kesehatan Anda.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/gambar4.jpg" class="hero-bg" alt="background 4">
+                <div class="hero-content">
+                    <h1>Artikel Terlengkap <br> dan Terbaru</h1>
+                    <p>Menyediakan berbagai artikel <br>dari hasil riset para pakar-pakar dunia</p>
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+
+    <script>
+        let current = 0;
+        const slides = document.querySelectorAll('.hero-slider .slide');
+        const dots = document.querySelectorAll('.dot');
+        let interval = setInterval(nextSlide, 10000);
+
+        function nextSlide() {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+            dots[current].classList.add('active');
+        }
+
+        function showSlide(index) {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('active');
+            current = index;
+            slides[current].classList.add('active');
+            dots[current].classList.add('active');
+            resetInterval();
+        }
+
+        function resetInterval() {
+            clearInterval(interval);
+            interval = setInterval(nextSlide, 10000);
+        }
+
+        // Tambahkan event listener pada dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+    </script>
+
+    <div class="wrapper">
+        <section id="home">
+            <img src="img/gambardokter.png" class="image"/>
+            <div class="kolom">
+                <p class="deskripsi">Selamat datang di SEHATBERSAMA</p>
+                <h2>Menuju Gaya Hidup
+                    <br>Sehat dan Bahagia</h2>
+                <p>Kami hadir untuk mendukung Anda menjalani hidup sehat 
+                    <br>dengan informasi, layanan, dan tips yang bermanfaat setiap hari.</p>
+                <p><a href="#" id="btn-learn-more" class="tbl-pink">Pelajari Lebih Lanjut</a></p>
+            </div>
+        </section>
+
+
+        <section class="info-section">
+            <h2><span>SEHATBERSAMA</span> memberi Anda informasi yang paling dibutuhkan</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="img/1.png" alt="1">
+                    <h3>PELAYANAN MEDIS MODERN</h3>
+                    <p>Hospital SEHATBERSAMA dilengkapi dengan teknologi terkini untuk memberikan pelayanan medis yang cepat, akurat, dan nyaman bagi setiap pasien.</p>
+                </div>
+                <div class="card">
+                    <img src="img/2.png" alt="2">
+                    <h3>DOKTER-DOKTER BERKUALITAS</h3>
+                    <p>Tim medis SEHATBERSAMA terdiri dari dokter-dokter spesialis yang berpengalaman dan berdedikasi tinggi dalam memberikan penanganan terbaik untuk kesehatan Anda.</p>
+                </div>
+                <div class="card">
+                    <img src="img/3.png" alt="3">
+                    <h3>ARTIKEL KESEHATAN TERPERCAYA</h3>
+                    <p>SEHATBERSAMA menyediakan berbagai artikel kesehatan yang informatif dan terpercaya, ditulis oleh para ahli untuk membantu Anda memahami kondisi kesehatan secara mendalam.</p>
+                </div>
+                <div class="card">
+                    <img src="img/4.png" alt="4">
+                    <h3>KONSULTASI ONLINE MUDAH</h3>
+                    <p>Dapatkan kemudahan konsultasi dengan dokter spesialis melalui platform online kami, tanpa harus datang langsung ke rumah sakit.</p>
+                </div>
+             </div>
+        </section>
+
+        
+        <section id="video" class="video-section">
+        <h3 class="video-title">Profil SEHATBERSAMA</h3>
+        <video class="profil-video" controls>
+            <source src="video/Video Profil Fakultas Kedokteran UNSOED 2024.mp4" type="video/mp4">
+            Maaf, browser Anda tidak mendukung pemutaran video.
+        </video>
+    </section>
+    </div> 
+    <div id="spa-content" style="display:none;"></div>
+    
+    <script>
+    document.getElementById('btn-learn-more').addEventListener('click', function(e) {
+        e.preventDefault();
+        // Sembunyikan wrapper utama
+        document.querySelector('.wrapper').style.display = 'none';
+        // Tampilkan konten SPA
+        const spaContent = document.getElementById('spa-content');
+        spaContent.style.display = 'block';
+        spaContent.innerHTML = `
+            <section class="spa-section-grid">
+                <div class="spa-box">
+                    <h2>Tujuan SEHATBERSAMA</h2>
+                    <p>
+                    Memberikan edukasi, layanan, dan dukungan kesehatan terbaik untuk masyarakat Indonesia agar hidup lebih sehat, dan produktif, sehingga menciptakan hidup sehat yang bahagia.
+                    </p>
+                </div>
+                <div class="spa-box">
+                    <h2>Manfaat untuk Masyarakat</h2>
+                    <ul>
+                    <li>Akses informasi kesehatan terpercaya dan mudah dipahami</li>
+                    <li>Konsultasi dan layanan kesehatan modern</li>
+                    <li>Tips gaya hidup sehat dan pencegahan penyakit</li>
+                    <li>Komunitas peduli kesehatan</li>
+                    </ul>
+                </div>
+                <div class="spa-box">
+                    <h2>Edukasi Kesehatan & Gaya Hidup Sehat</h2>
+                    <p>
+                    Kami menyediakan artikel, pelayanan, dan program edukasi seputar nutrisi, olahraga, kesehatan mental, dan kebiasaan sehat sehari-hari.
+                    </p>
+                </div>
+                <div class="spa-box">
+                     <h2>Cara Berpartisipasi dalam Program</h2>
+                    <ol>
+                    <li>Ikuti akun media sosial SEHATBERSAMA</li>
+                    <li>Gabung komunitas dan forum diskusi</li>
+                    <li>Ikuti event, webinar, dan program kesehatan kami</li>
+                    <li>Bagikan pengalaman dan inspirasi sehat ke lingkungan sekitar</li>
+                    </ol>
+                </div>
+            </section>
+        `;
+    });
+    </script>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>SEHATBERSAMA</h3>
+                <p>Platform kesehatan terpercaya yang menyediakan informasi dan layanan kesehatan untuk membantu Anda hidup lebih sehat dan bahagia.</p>
+                <div class="social-links">
+                    <a href="#"><i>FB</i></a>
+                    <a href="#"><i>IG</i></a>
+                    <a href="#"><i>TW</i></a>
+                    <a href="#"><i>YT</i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Layanan Kami</h3>
+                <ul>
+                    <li><a href="#">Konsultasi Kesehatan</a></li>
+                    <li><a href="#">Program Diet</a></li>
+                    <li><a href="#">Tes Kesehatan</a></li>
+                    <li><a href="#">Webinar Kesehatan</a></li>
+                    <li><a href="#">Artikel Kesehatan</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="artikel.html">Artikel</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Berlangganan</h3>
+                <p>Dapatkan tips kesehatan dan update terbaru dari kami.</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Anda" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Berlangganan</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 SEHATBERSAMA. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
